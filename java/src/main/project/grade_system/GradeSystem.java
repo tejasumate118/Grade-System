@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Grade {
+public class GradeSystem {
     static GradeCalculation gradeSystem = new GradeCalculation();
 
     public static void main(String[] args) {
@@ -64,8 +64,12 @@ public class Grade {
         }
         gradeSystem.calculateGradeForStudent(students);
         //Print Data
+        System.out.println("+--------+--------------------+-------+-------+");
+        System.out.println("|RollNo  | Name               | Score | Grade |");
+
         for (Student student:students){
             student.printData();
         }
+        System.out.println("+--------+--------------------+-------+-------+");
     }
 }
