@@ -64,6 +64,10 @@ public class GradeSystem {
         }
         gradeSystem.calculateGradeForStudent(students);
         //Print Data
+        printData(students);
+
+    }
+    public static void printData(List<Student> students){
         System.out.println("+--------+--------------------+-------+-------+");
         System.out.println("|RollNo  | Name               | Score | Grade |");
 
