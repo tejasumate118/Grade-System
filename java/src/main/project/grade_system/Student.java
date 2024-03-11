@@ -1,15 +1,16 @@
 package main.project.grade_system;
 
-class Student {
+public class Student {
     private int rollNo;
     private String name;
     private int score;
     private String grade;
-    Student(int RollNo,String Name, int Score){
+    public Student(int RollNo,String Name, int Score){
         this.name =Name;
         this.rollNo =RollNo;
         this.score =Score;
     }
+    public Student() {}
 
     public int getRollNo() {
         return rollNo;

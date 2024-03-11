@@ -1,18 +1,23 @@
 package main.project.grade_system;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import main.project.grade_system.file.*;
+
+import java.util.*;
+
 
 public class GradeSystem {
+    static FileIO fileIO=new FileIO();
     static GradeCalculation gradeSystem = new GradeCalculation();
 
     public static void main(String[] args) {
 
         //testSingleGrade();
         //testMultipleGrade();
-        testMultipleProperties();
+        //testMultipleProperties();
+        fileIO.testCSVInput();
     }
+
+
 
     private static void testMultipleGrade() {
         Scanner scanner = new Scanner(System.in);
